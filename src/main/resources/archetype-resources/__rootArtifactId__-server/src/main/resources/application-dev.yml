@@ -1,0 +1,53 @@
+mybatis:
+  mapper-locations: mapper/*.xml
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://183.131.202.186:3306/${artifactId}?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: wanbo@123
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,slf4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+#  redis:
+#    database: 0
+#    host: 183.131.202.28
+#    port: 6379
+#    password: wanbo@123
+#    pool:
+#      max-active: 8
+#      max-wait: -1
+#      max-idle: 8
+#      min-idle: 0
+#    timeout: 10000
+#  cloud:
+#    consul:
+#      host: 127.0.0.1
+#      port: 8500
+#      discovery:
+#        healthCheckPath: /${spring.application.name}/actuator/health
+#        serviceName: ${spring.application.name}
+server:
+  port: 8080
+  servlet:
+    context-path: /${spring.application.name}
+logging:
+  level:
+    com.zjdex: DEBUG
+#  config: classpath:logback-spring.xml
+#  path: /data/servers/logs/${spring.application.name}/
+
+
+
