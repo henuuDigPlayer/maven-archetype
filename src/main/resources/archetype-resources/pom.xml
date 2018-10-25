@@ -15,7 +15,7 @@
     <name>${artifactId}</name>
 
     <modules>
-        <module>${artifactId}-api</module>
+        <module>${artifactId}-client</module>
         <module>${artifactId}-beans</module>
         <module>${artifactId}-server</module>
     </modules>

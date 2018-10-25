@@ -8,10 +8,10 @@
         <artifactId>${artifactId}</artifactId>
         <version>${version}</version>
     </parent>
-    <artifactId>${artifactId}-api</artifactId>
+    <artifactId>${artifactId}-client</artifactId>
     <version>${version}</version>
 
-    <name>${artifactId}-api</name>
+    <name>${artifactId}-client</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

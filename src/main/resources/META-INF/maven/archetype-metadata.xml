@@ -4,13 +4,13 @@
                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <fileSets>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>__rootArtifactId__-api/src/main/java</directory>
+            <directory>__rootArtifactId__-client/src/main/java</directory>
             <includes>
                 <include>**/*.**</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>__rootArtifactId__-api/src/main/resources</directory>
+            <directory>__rootArtifactId__-client/src/main/resources</directory>
             <includes>
                 <include>**/*.xml</include>
                 <include>**/**</include>
@@ -18,13 +18,13 @@
         </fileSet>
 
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>__rootArtifactId__-api/src/main/java</directory>
+            <directory>__rootArtifactId__-client/src/main/java</directory>
             <includes>
                 <include>**/*.**</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>__rootArtifactId__-api</directory>
+            <directory>__rootArtifactId__-client</directory>
             <includes>
                 <include>pom.xml</include>
             </includes>
