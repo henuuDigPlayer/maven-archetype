@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @author: lindj
  * @date: 2018/5/16 17:06
- * @description:
+ * @description: 数据库配置
  */
 @Configuration
 public class DataSourceConfig {

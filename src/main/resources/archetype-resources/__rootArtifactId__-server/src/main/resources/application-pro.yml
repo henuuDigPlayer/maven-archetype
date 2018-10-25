@@ -51,6 +51,6 @@ server:
 logging:
   level:
     com.zjdex: DEBUG
-#  config: classpath:logback-spring.xml
+  config: classpath:logback-spring.xml
 #  path: /data/servers/logs/${spring.application.name}/
 
