@@ -15,8 +15,9 @@ public interface UserService {
 
 
     /**
-     * 获取用户数量
+     * 获取用户列表
      *
+     * @return list
      */
     List<User> getList();
 }

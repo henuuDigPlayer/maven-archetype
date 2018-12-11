@@ -21,7 +21,7 @@ public class DemoTask {
      * 每天 凌晨2 点执行
      *
      */
-    @Scheduled(cron = "0 0 2 * * ?")
+    //@Scheduled(cron = "0 0 2 * * ?")
     public void execute() {
     }
 

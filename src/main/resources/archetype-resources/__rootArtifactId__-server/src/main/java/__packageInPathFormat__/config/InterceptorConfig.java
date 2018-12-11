@@ -2,7 +2,7 @@ package ${groupId}.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * @author: lindj
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * @description: 拦截器配置
  */
 @Configuration
-public class InterceptorConfig extends WebMvcConfigurerAdapter  {
+public class InterceptorConfig implements WebMvcConfigurer {
 
 
     @Override

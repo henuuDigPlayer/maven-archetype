@@ -2,6 +2,9 @@ package ${groupId}.enums;
 
 public enum DemoEnum {
 
+    /**
+     * demo
+     */
     DEMO(1, "demo");
 
     private Integer code;
