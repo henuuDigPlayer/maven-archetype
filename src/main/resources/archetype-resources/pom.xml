@@ -6,7 +6,7 @@
     <parent>
         <artifactId>framework-boot-starter</artifactId>
         <groupId>com.zjdex.framework</groupId>
-        <version>1.0</version>
+        <version>1.2</version>
     </parent>
     <groupId>${groupId}</groupId>
     <artifactId>${artifactId}</artifactId>

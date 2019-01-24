@@ -31,7 +31,7 @@ public class ExecutorConfig {
     @Value("${spring.executor.thread.name.prefix}")
     private String namePrefix;
 
-    @Bean(name = "asyncExecutorService")
+    @Bean(name = "executorService")
     public Executor asyncServiceExecutor() {
         logger.info("threadpool start init");
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
