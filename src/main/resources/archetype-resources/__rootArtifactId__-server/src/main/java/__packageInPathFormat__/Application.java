@@ -13,7 +13,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @date 2018/4/11 0011
  */
 @SpringBootApplication
-@MapperScan("${groupId}.mapper")
+@MapperScan({"${groupId}.mapper","com.zjdex.framework.mapper"})
 //@EnableDiscoveryClient
 //@EnableFeignClients
 @EnableScheduling
