@@ -68,11 +68,6 @@ spring:
 #      discovery:
 #        healthCheckPath: /${spring.application.name}/actuator/health
 #        serviceName: ${spring.application.name}
-#静态资源设置
-#  mvc:
-#    static-path-pattern: /**
-#  resources:
-#    static-locations: file:${constants.filePath}
 server:
   port: ${SERVER_PORT}
   servlet:
@@ -82,4 +77,11 @@ logging:
     com.zjdex: DEBUG
   config: classpath:logback-spring.xml
 #  path: /data/servers/logs/${spring.application.name}/
+constants:
+  writeMapExpire: 180
+  readMapExpire: 30
+  writeMapSize: 1000
+  threadPool:
+    enable: true
+    corePoolSize: 5
 

@@ -77,6 +77,13 @@ logging:
     com.zjdex: DEBUG
   config: classpath:logback-spring.xml
 #  path: /data/servers/logs/${spring.application.name}/
+constants:
+  writeMapExpire: 180
+  readMapExpire: 30
+  writeMapSize: 1000
+  threadPool:
+    enable: true
+    corePoolSize: 5
 
 
 
