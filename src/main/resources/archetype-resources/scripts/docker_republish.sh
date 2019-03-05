@@ -8,9 +8,17 @@ fi
 
 echo "container is stoping and removing"
 
-docker ps -a | grep -E "${service_name}" | awk '{print $1}' | xargs docker stop
-docker ps -a | grep -E "${service_name}" | awk '{print $1}' | xargs docker rm
-docker images | grep -E "${service_name}" | awk '{print $3}' | xargs docker rmi
+containerId=$(docker ps -a | grep -E "${service_name}" | awk '{print $1}')
+
+if [ ! -z $containerId ]
+  then docker stop $containerId && docker rm $containerId
+fi
+
+imageId=$(docker images | grep -E "${service_name}" | awk '{print $3}')
+if [ ! -z $imageId ]
+  then docker rmi $imageId
+fi
+
 
 echo "image and container ware removed and image is building"
 cd ..

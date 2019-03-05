@@ -5,8 +5,11 @@ port=$1
 if [ -z $port ]
   then port=23500
 fi
-docker ps -a | grep -E "${service_name}" | awk '{print $1}' | xargs docker stop
-docker ps -a | grep -E "${service_name}" | awk '{print $1}' | xargs docker rm
+containerId=$(docker ps -a | grep -E "${service_name}" | awk '{print $1}')
+
+if [ ! -z $containerId ]
+  then docker stop $containerId && docker rm $containerId
+fi
 echo "container is starting"
 
 docker run -p ${port}:${port} \
