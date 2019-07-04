@@ -6,7 +6,7 @@
 
   <groupId>com.archetype</groupId>
   <artifactId>maven-archetype</artifactId>
-  <version>1.0</version>
+  <version>1.0.1</version>
   <name>maven-archetype</name>
 
   <properties>

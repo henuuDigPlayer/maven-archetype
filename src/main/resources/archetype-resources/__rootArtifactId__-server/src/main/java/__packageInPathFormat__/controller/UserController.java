@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 /**
- * @author: lindj
- * @date: 2018/5/4 17:02
- * @description: 用户模块
+ * @author lindj
+ * @date 2018/5/4 17:02
+ * @description 用户模块
  */
 @RestController
 @RequestMapping("/api/user")

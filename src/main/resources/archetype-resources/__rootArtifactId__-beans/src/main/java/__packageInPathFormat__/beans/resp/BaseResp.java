@@ -3,9 +3,9 @@ package ${groupId}.beans.resp;
 import java.io.Serializable;
 
 /**
- * @author: lindj
- * @date: 2018/5/4 15:27
- * @description:
+ * @author lindj
+ * @date 2018/5/4 15:27
+ * @description
  */
 public class BaseResp implements Serializable {
 

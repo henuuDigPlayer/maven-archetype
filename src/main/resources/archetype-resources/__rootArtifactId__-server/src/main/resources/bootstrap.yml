@@ -1,0 +1,24 @@
+server:
+  port: ${SERVER_PORT}
+spring:
+  application:
+    name: ${artifactId}-server
+  profile: ${PROFILE}
+  cloud:
+    config:
+      profile: ${spring.profile}
+      discovery:
+        enabled: true
+        serviceId: config-server
+      name: ${spring.application.name}
+      label: master
+eureka:
+  instance:
+    hostname: ${SERVER_HOSTNAME}
+    metadata-map:
+      version: @project.version@
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${SERVER_PORT}:@project.version@
+  client:
+    service-url:
+      defaultZone: http://${EUREKA_URL}:${EUREKA_PORT}/eureka/
+

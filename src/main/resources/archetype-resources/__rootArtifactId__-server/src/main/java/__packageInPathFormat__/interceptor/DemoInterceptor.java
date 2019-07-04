@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author: lindj
- * @date: 2018/5/9 12:55
- * @description: 拦截器
+ * @author lindj
+ * @date 2018/5/9 12:55
+ * @description 拦截器
  */
 @Component
 public class DemoInterceptor extends HandlerInterceptorAdapter {

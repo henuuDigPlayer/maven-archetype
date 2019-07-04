@@ -7,9 +7,9 @@ import java.util.List;
 
 
 /**
- * @author: lindj
- * @date: 2018/5/4 15:27
- * @description: 用户接口
+ * @author lindj
+ * @date 2018/5/4 15:27
+ * @description 用户接口
  */
 public interface UserService {
 

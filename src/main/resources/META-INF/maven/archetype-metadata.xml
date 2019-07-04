@@ -10,14 +10,6 @@
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>__rootArtifactId__-client/src/main/resources</directory>
-            <includes>
-                <include>**/*.xml</include>
-                <include>**/**</include>
-            </includes>
-        </fileSet>
-
-        <fileSet filtered="true" encoding="UTF-8">
             <directory>__rootArtifactId__-client/src/main/java</directory>
             <includes>
                 <include>**/*.**</include>
@@ -29,13 +21,7 @@
                 <include>pom.xml</include>
             </includes>
         </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-            <directory>__rootArtifactId__-beans/src/main/resources</directory>
-            <includes>
-                <include>**/*.xml</include>
-                <include>**/**</include>
-            </includes>
-        </fileSet>
+
         <fileSet filtered="true" encoding="UTF-8">
             <directory>__rootArtifactId__-beans/src/main/java</directory>
             <includes>
@@ -69,7 +55,7 @@
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>__rootArtifactId__-server/mybatis_generator</directory>
+            <directory>mybatis_generator</directory>
             <includes>
                 <include>**</include>
             </includes>
@@ -78,12 +64,6 @@
             <directory>scripts</directory>
             <includes>
                 <include>**</include>
-            </includes>
-        </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-            <directory>__rootArtifactId__-server/logs</directory>
-            <includes>
-                <include>**/**</include>
             </includes>
         </fileSet>
     </fileSets>
