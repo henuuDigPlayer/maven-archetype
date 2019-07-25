@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# 环境
-profile=dev
 
 # 服务所在地址
 server_host_name=61.174.254.22
@@ -15,5 +13,6 @@ pay_hostip=61.174.255.140
 order_hostname=hdwhpharmt.zjbdos.com
 order_hostip=61.174.254.204
 
-# 版本
-image_version=1.0-SNAPSHOT
+
+application_name=${artifactId}
+service_name=${artifactId}-server

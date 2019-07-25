@@ -1,6 +1,6 @@
 #!/bin/sh
 
-application_name=$1
+application_name=${artifactId}
 
 if [ -z $application_name ]
   then echo "application_name  is null" &&  exit 1

@@ -3,17 +3,18 @@
 source ./conf.sh
 source ./fun.sh
 
-application_name=$1
+profile=$1
+image_version=$2
 
-service_name="${application_name}-server"
+if [ -z $profile ]
+  then profile=dev
+fi
 
-if [ -z $application_name ]
-  then echo "application_name  is null" &&  exit 1
+if [ -z $image_version ]
+  then image_version=1.0-SNAPSHOT
 fi
 
 host_port=$(getServerPort 30001 32767)
-
-echo "application=${application_name}"
 
 echo "container is stoping and removing"
 
@@ -32,7 +33,7 @@ fi
 echo "image and container ware removed and image is building"
 cd ..
 mvn clean install
-cd ${application_name}-server
+cd ${service_name}
 
 mvn clean package -Dmaven.test.skip=true docker:build
 

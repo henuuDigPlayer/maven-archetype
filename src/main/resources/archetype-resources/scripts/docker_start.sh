@@ -3,14 +3,18 @@
 source ./conf.sh
 source ./fun.sh
 
-application_name=$1
-service_name="${application_name}-server"
 
-echo "application=${application_name}"
+profile=$1
+image_version=$2
 
-if [ -z $application_name ]
-  then echo "application_name  is null" &&  exit 1
+if [ -z $profile ]
+  then profile=dev
 fi
+
+if [ -z $image_version ]
+  then image_version=1.0-SNAPSHOT
+fi
+
 
 host_port=$(getServerPort 30001 32767)
 
