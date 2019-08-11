@@ -18,4 +18,4 @@ order_hostip=61.174.254.204
 
 # 版本
 image_version=1.0-SNAPSHOT
-application=user
+application_name=${artifactId}

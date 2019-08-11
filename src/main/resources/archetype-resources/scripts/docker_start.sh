@@ -3,7 +3,6 @@
 source ./conf.sh
 source ./fun.sh
 
-application_name=$1
 service_name="${application_name}-server"
 
 echo "application=${application_name}"
