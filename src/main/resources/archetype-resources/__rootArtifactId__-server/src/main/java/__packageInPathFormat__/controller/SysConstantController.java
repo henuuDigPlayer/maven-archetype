@@ -1,6 +1,6 @@
 package ${groupId}.controller;
 
-import com.zjdex.framework.config.SysConstantConfig;
+import com.boot.framework.config.SysConstantConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
